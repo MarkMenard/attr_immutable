@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = AttrImmutable::VERSION
   s.authors     = ["Mark Menard"]
   s.email       = ["mark@mjm.net"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/MarkMenard/attr_immutable"
   s.summary     = %q{Add attr_immutable to create immutable protected attributes on your Ruby classes.}
-  s.description = %q{AttrImmutable add the attr_immutable class method to create immutable properties on Ruby classes. The attribute are only accessible using the accessor/mutator pair by hiding the attribute value using a closure. (ie. the immutable attribute is not stored in an instance variable and therefore can't accessed in any other way.)}
+  s.description = %q{AttrImmutable add the attr_immutable class method to create immutable properties on Ruby classes. The attribute are only accessible using the accessor/mutator pair by hiding the attribute value using a closure. (ie. the immutable attribute is not stored in an instance variable and therefore can't be accessed in any other way. No developer end runs.)}
 
   s.rubyforge_project = "attr_immutable"
 
