@@ -1,0 +1,31 @@
+= Description
+
+A simple class method to create immutable attributes in the style or attr_attributes, attr_reader, attr_writer, etc.
+
+= Requirements
+
+JRuby
+
+= Usage
+
+Install the gem:
+
+  gem install attr_immutable
+
+Run the code:
+
+  class ImmutableFoo
+    attr_immutable :foo
+    
+  end
+
+  foo = Foo.new
+  foo.foo = 'Set the value'
+  foo.foo = 'Oops! This will raise an error' # <= This will raise a runtime error.
+
+= History
+
+SimpleWorkQueue is a fork of WorkQueue by Miguel Fonseca. SimpleWorkQueue removes the time out and bounded task queue.
+The timeout created issues under the concurrency implementation in JRuby. The time out mechanism was replaced using a
+non-blocking queue from the java.util.concurrent library. If a worker thread attempts to remove a task from the task queue
+and it is empty it will exit the worker thread.
